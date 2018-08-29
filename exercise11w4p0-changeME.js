@@ -1,5 +1,6 @@
 function changeMe(arr) {
-  for(i = 0; i < arr.length; i++){
+    var obj=[]
+    for(i = 0; i < arr.length; i++){
     var ob = {};
     ob.firstName = arr[i][0];
     ob.lastName = arr[i][1];
@@ -9,8 +10,14 @@ function changeMe(arr) {
     }else{
       ob.age = 2018-arr[i][3];
     }
-    console.log(ob)
+    obj.push(ob)
+    
+    }  
+  for(var j=0;j<obj.length;j++){
+  console.log((j+1)+'. '+obj[j].firstName+' '+obj[j].lastName)
+  console.log(obj[j])
   }
+  
 }
 
 // TEST CASES
