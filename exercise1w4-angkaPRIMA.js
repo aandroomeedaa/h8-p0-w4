@@ -9,10 +9,10 @@ function angkaPrima(angka) {
       
  }
  if (abs > 2){
-   stat = stat + 'bukan Prima'
+   stat = stat + 'False'
  }
  else {
-   stat= stat + 'Prima'
+   stat= stat + 'True'
  }
 return (stat)
  
